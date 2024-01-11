@@ -1,5 +1,5 @@
-# bard
-A curses application to view and manage lyrics 
+# lyric finder
+A python script to view and manage lyrics 
 
 **Dependancies**
 
