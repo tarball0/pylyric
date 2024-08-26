@@ -1,8 +1,12 @@
 # lyric finder
 A python script to view and manage lyrics 
 
-**Dependancies**
+**Running**
 
-* Requests library
-* beautifulsoup4 library
-* windows-curses library (for Windows users)
+* Step 1: `pip install -r requirements.txt`
+* Step 2: profit
+* Step 3: ???
+
+**Windows users**
+* Install additional package
+`pip install windows-curses`

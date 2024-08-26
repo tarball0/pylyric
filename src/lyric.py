@@ -3,7 +3,6 @@
 import requests 
 import curses
 from bs4 import BeautifulSoup
-import pickle
 import os
 import time
 # --------------------------------------------- #
