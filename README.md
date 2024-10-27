@@ -1,5 +1,5 @@
 # lyric finder
-A python script to view and manage lyrics 
+An ncurses CLI utility to view lyrics written in python.
 
 ## Running
 
