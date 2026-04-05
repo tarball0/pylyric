@@ -9,6 +9,12 @@ PyLyric is a lightweight, terminal-based utility written in Python for searching
 - **Offline Viewing:** Lyrics are automatically saved to your local storage for viewing without an internet connection.
 - **Cache Management:** Easily clear your saved lyrics directly from the application menu.
 
+## Screenshots
+
+| Main Menu | Offline Library | Lyrics View |
+| :---: | :---: | :---: |
+| ![Main Menu](Pictures/main-menu.png) | ![Offline Library](Pictures/offline-library.png) | ![Lyrics View](Pictures/lyrics-view.png) |
+
 ## Prerequisites
 
 - **Python 3.x**
