@@ -278,6 +278,7 @@ def main(stdscr):
                         current += 1
                     elif keypress == curses.KEY_ENTER or keypress in [10, 13]:
                         if current == 0:
+                            os.system("clear")
                             return 0
                         else:
                             break
