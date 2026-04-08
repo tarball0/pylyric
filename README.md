@@ -25,7 +25,7 @@ PyLyric is a lightweight, terminal-based utility written in Python for searching
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/yourusername/pylyric.git
+   git clone https://github.com/tarball0/pylyric.git
    cd pylyric
    ```
 
