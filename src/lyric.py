@@ -165,7 +165,7 @@ def main(stdscr):
     current_row = 0
 
     # print the menu
-    print_menu(stdscr, current_row, menu, "BARD")
+    print_menu(stdscr, current_row, menu, "PyLyric")
 
     while 1:
         key = stdscr.getch()
@@ -283,7 +283,7 @@ def main(stdscr):
                         else:
                             break
 
-        print_menu(stdscr, current_row, menu, "BARD")
+        print_menu(stdscr, current_row, menu, "PyLyric")
 
 
 # ------------------------------------------------------------------- #
