@@ -48,5 +48,4 @@ python src/lyric.py
 
 ## Local Storage
 
-PyLyric saves your lyrics in a directory named `Bard` located in your home directory (`~/Bard/`).
-
+PyLyric saves your lyrics in a directory named `.pylyric` located in your home directory (`~/.pylyric/`).
