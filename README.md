@@ -50,6 +50,3 @@ python src/lyric.py
 
 PyLyric saves your lyrics in a directory named `Bard` located in your home directory (`~/Bard/`).
 
-## License
-
-This project is licensed under the terms of the [LICENCE](LICENCE) file.

@@ -67,20 +67,20 @@ menu = ["Search for Lyrics", "View Offline Lyrics", "Clear Offline Lyrics", "Exi
 uname = os.getenv("USER")
 
 # Create local storage directory
-if not os.path.exists(f"/home/{uname}/Bard"):
-    os.mkdir(f"/home/{uname}/Bard")
+if not os.path.exists(f"/home/{uname}/.pylyric"):
+    os.mkdir(f"/home/{uname}/.pylyric")
 
 
 # Adding lyrics in text files
 def addfile(name, lyrics):
-    f = open(f"/home/{uname}/Bard/{name}.txt", "w")
+    f = open(f"/home/{uname}/.pylyric/{name}.txt", "w")
     f.write(lyrics)
     f.close()
 
 
 # Displaying lyrics
 def displayLy(name):
-    f = open(f"/home/{uname}/Bard/{name}", "r")
+    f = open(f"/home/{uname}/.pylyric/{name}", "r")
     ly = f.read()
     return ly
 
@@ -108,7 +108,7 @@ def lyricsfunction(artist, song):
     if " " in son:
         son = son.replace(" ", "")
 
-    if not os.path.isfile(f"/home/{uname}/Bard/{artist}: {song}"):
+    if not os.path.isfile(f"/home/{uname}/.pylyric/{artist}: {song}"):
         try:
             # accessing data from the url using the "get" method
             url = f"https://www.azlyrics.com/lyrics/{art}/{son}.html"
@@ -199,7 +199,7 @@ def main(stdscr):
                 current = 0
                 off = []
                 tableau = []
-                dire = os.listdir(f"/home/{uname}/Bard/")
+                dire = os.listdir(f"/home/{uname}/.pylyric/")
                 for nam in dire:
                     li = nam[:-4]
                     li = li.split(": ")
@@ -252,7 +252,7 @@ def main(stdscr):
                         current += 1
                     elif keypress == curses.KEY_ENTER or keypress in [10, 13]:
                         if current == 1:
-                            os.system(f"rm /home/{uname}/Bard/*")
+                            os.system(f"rm /home/{uname}/.pylyric/*")
                             print_center(stdscr, "All Offline Lyrics have been Deleted")
                             time.sleep(3)
                             break
